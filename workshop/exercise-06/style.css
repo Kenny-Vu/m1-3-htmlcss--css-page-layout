@@ -1,13 +1,42 @@
-body {
+* {
   margin: 0;
+  box-sizing: border-box;
 }
 
 .nav {
   background-color: #383737;
+  height: 8vh;
+  font-size: 1.5rem;
+  color: white;
+}
+.nav-dropdown {
+  position: absolute;
+  text-align: center;
+  width: 12.5vw;
+  padding: 1rem 0;
+}
+.nav-menu {
+  width: 100%;
+  display: block;
 }
 
-.nav-dropdown {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
+.nav-menu ul {
+  list-style-type: none;
+  margin:0;
+  padding: 1rem 0;
+  
+}
+
+.nav-menu ul li {
+  padding: 1rem 0;
+  background-color: rgb(21, 168, 226);
+  display: none;
+}
+
+.nav-dropdown:hover > .nav-menu ul li {
+  display: block;
+}
+
+.nav-menu ul li:hover {
+  background-color: blue;
 }
