@@ -1,7 +1,36 @@
 body {
   margin: 0;
 }
+.mobile-nav {
+  display: none;
+}
 
 .mobile-nav-button img {
   width: 18px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.desktop-nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-nav ul li {
+  padding: 1rem;
+}
+
+@media screen and (max-width:750px) {
+  .mobile-nav {
+    display: block;
+  }
+  .desktop-nav {
+    display: none;
+  }
 }
