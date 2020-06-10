@@ -1,0 +1,13 @@
+body {
+    background-image: url(/workshop/exercise-03/imgs/bg.jpg);
+    background-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "poppins";
+    color:white;
+}
