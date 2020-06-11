@@ -4,20 +4,53 @@ body {
 
 .main {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .fast {
-  transform: translateX(50%);
-  opacity: 0;
-  animation: ease-in-out 1s;
+  animation: mymove 1s ease-in-out;
+  position: relative;
+  font-size: 3rem;
 }
-.fast.appear {
-  transform: translateX(0);
-  opacity: 1;
+
+@keyframes mymove {
+  from {
+    transform: translateX(50%);
+    opacity:0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+}
 }
 
 .cool {
+  height: 100px;
+  width: 250px;
+  color: white;
+  background-color: #24a0ed;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  box-shadow: 5px 10px 18px rgb(148, 143, 143);
+  cursor: pointer;
+  transition: all 1s;
+}
+  
+.cool:hover {
+  animation: sizeup 1s ease-out;
+}
+@keyframes sizeup {
+  from{
+    transform: scale(1, 1);
+  }
+  to{
+    transform: scale(1.5,1.5);
+  }
+}
+.cool:active {
+  transform: rotate(360deg); 
 }
