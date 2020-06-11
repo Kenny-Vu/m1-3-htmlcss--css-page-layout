@@ -10,6 +10,13 @@ body {
 }
 
 .fast {
+  transform: translateX(50%);
+  opacity: 0;
+  animation: ease-in-out 1s;
+}
+.fast.appear {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .cool {

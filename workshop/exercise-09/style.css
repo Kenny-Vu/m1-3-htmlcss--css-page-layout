@@ -1,3 +1,48 @@
+.header {
+  text-align: center;
+}
+
+body {
+  max-width: 100vw;
+  padding: 1rem;
+}
+table {
+  border: solid thin rgb(194, 191, 191);
+  padding: 1rem;
+}
 h3 {
   margin-bottom: 0;
+}
+th {
+  text-align: left;
+}
+
+td {
+  width: 2%;
+  height: 30px;
+}
+
+tr:nth-child(even){
+  background-color: rgb(218, 213, 213);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+.links li {
+  width: 24%;
+  height: 3rem;
+  background-color: #24a0ed;
+  text-align: center;
+}
+.links li a{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  border: solid;
+  padding-top: .75rem;
 }

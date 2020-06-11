@@ -12,10 +12,11 @@ body {
 .registration-form {
   box-shadow: 2px 2px 2px rgb(209, 206, 206);
   border: solid rgb(209, 206, 206);
-  width: 100vw;
+  width: 80vw;
   text-align: left;
   display: block;
   padding: 1rem 2rem;
+  margin: 0 auto;
 }
 
 .text-field {
@@ -73,7 +74,7 @@ textarea {
 }
 
 .form-button {
-  margin-left: 47%;
+  margin-left: 37vw;
   width: 6rem;
   height: 3rem;
   border: solid thin skyblue;
